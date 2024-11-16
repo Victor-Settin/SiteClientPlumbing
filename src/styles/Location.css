@@ -1,0 +1,49 @@
+.location-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  .location-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .location-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .location-info h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .location-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .location-info li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .location-map {
+    flex: 1;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  @media (max-width: 568px) {
+    .location-section {
+      padding: 40px 20px;
+      flex-direction: column;
+    }
+  }

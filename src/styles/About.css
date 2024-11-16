@@ -1,0 +1,60 @@
+/* src/styles/About.css */
+
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
+  color: #333;
+  line-height: 1.8; /* Melhorando a legibilidade */
+  background-color: #f7f9fc; /* Cor de fundo mais suave */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para um visual moderno */
+  border-radius: 8px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 32px;
+  color: #0056b3; /* Azul claro */
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #555;
+  font-weight: 300; /* Peso mais leve para o subtítulo */
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 300; /* Peso leve para o texto */
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 40px 20px;
+  }
+
+  .about-header h1 {
+    font-size: 28px;
+  }
+
+  .about-header p {
+    font-size: 16px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+}

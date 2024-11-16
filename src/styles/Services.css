@@ -1,0 +1,77 @@
+/* src/styles/Services.css */
+.services {
+  padding: 40px 20px; /* Maior espaçamento para dar um ar mais amplo */
+  font-family: 'Poppins', sans-serif; /* Usar a fonte Poppins para modernidade */
+  background-color: #f7f9fc; /* Fundo mais claro para a área de serviços */
+  color: #333; /* Cor mais escura para o texto */
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #0056b3; /* Azul para o título */
+}
+
+.services p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px; /* Maior espaçamento abaixo do parágrafo */
+  color: #555; /* Cor de texto mais suave */
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Adiciona espaço entre os itens */
+}
+
+.service-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 25%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.service-item:hover {
+  transform: translateY(-10px); /* Efeito de elevação mais visível */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.service-item h2 {
+  font-size: 1.6rem;
+  color: #007bff; /* Azul para os títulos das seções de serviço */
+  margin-bottom: 15px;
+  font-weight: 600; /* Peso mais forte para os subtítulos */
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666; /* Cor de texto mais suave para descrição */
+  margin-bottom: 25px; /* Maior espaçamento abaixo do texto */
+}
+
+.contact-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%; /* Faz os itens ocuparem 100% da largura em telas pequenas */
+    margin-bottom: 20px; /* Adiciona espaço entre os itens em telas pequenas */
+  }
+}

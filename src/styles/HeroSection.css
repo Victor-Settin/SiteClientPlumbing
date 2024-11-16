@@ -1,0 +1,93 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5f7fa;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.title {
+  color: #00aaff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Classe para inverter a ordem das caixas */
+.reverse .content {
+  flex-direction: row-reverse;
+}
+
+
+
+@media (max-width: 568px) {
+  .hero-section .content {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .title {
+      font-size: 18px;
+    }
+    
+    .subtitle {
+      font-size: 28px;
+    }
+    
+    .description {
+      font-size: 14px;
+    }
+
+    .button {
+      font-size: 14px;
+    }
+    
+}

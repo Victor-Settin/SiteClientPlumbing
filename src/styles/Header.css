@@ -1,0 +1,133 @@
+/* src/styles/Header.css */
+
+.header {
+  font-family: Arial, sans-serif;
+}
+
+.header__top-bar {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__contact-text {
+  font-size: 16px;
+}
+
+.header__phone-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.header__phone-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.header__phone-number {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__nav {
+  background-color: #007bff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img {
+  height: 70px;
+}
+
+/* Ícone de menu hambúrguer */
+.header__menu-icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilos padrão para o menu */
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header__menu li {
+  display: inline;
+}
+
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header__menu li a:hover {
+  opacity: 0.7;
+}
+
+.header__cta-button {
+  background-color: white;
+  color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header__cta-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+  .header__menu-icon {
+    display: block; /* Mostra o ícone de menu */
+  }
+
+  .header__menu {
+    display: none; /* Esconde o menu inicialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 111px;
+    right: 0;
+    background-color: #007bff;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Exibe o menu quando aberto */
+  .header__menu--open {
+    display: flex;
+  }
+
+  .header__menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .header__cta-button {
+    display: none; /* Esconde o botão de chamada em dispositivos móveis */
+  }
+}

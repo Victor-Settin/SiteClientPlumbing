@@ -1,0 +1,45 @@
+/* src/styles/Home.css */
+
+.home {
+  display: flex;
+  flex-direction: column; /* Mantém os elementos empilhados verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  width: 70%; /* O conteúdo ocupará 70% da largura da tela */
+  max-width: 1200px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente na tela */
+  padding: 40px 20px; /* Maior padding para mais espaçamento */
+  text-align: center;
+  background-color: #fff; /* Fundo branco para destaque */
+  border-radius: 8px; /* Canto arredondado */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aumenta a sombra para um efeito mais sofisticado */
+}
+
+.home h1 {
+  font-size: 2.5rem; /* Aumenta o tamanho do título */
+  font-family: 'Roboto Slab', serif; /* Aplica a fonte de títulos */
+  color: #0056b3; /* Azul claro */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior */
+}
+
+.home p {
+  font-size: 1.125rem; /* Tamanho de texto mais legível */
+  color: #333; /* Cor escura para o texto */
+  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+  line-height: 1.6; /* Melhor legibilidade com mais espaçamento entre linhas */
+}
+
+@media (max-width: 768px) {
+  .home {
+    width: 90%; /* Em telas menores, o conteúdo ocupa mais espaço */
+    padding: 20px 10px; /* Menos padding em telas pequenas */
+  }
+
+  .home h1 {
+    font-size: 2rem; /* Tamanho do título ajustado para telas menores */
+  }
+
+  .home p {
+    font-size: 1rem; /* Ajusta o tamanho do texto para mobile */
+  }
+}
