@@ -22,9 +22,10 @@
 
 .services-list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px; /* Adiciona espaço entre os itens */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 30px;
+    justify-content: center;
 }
 
 .service-item {
@@ -32,10 +33,15 @@
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 25%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 20px); /* Garante que os itens ocupem a largura necessária */
+  max-width: calc(33.333% - 20px); /* Limita a largura máxima */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  justify-content: space-between; /* Cria espaçamento uniforme */
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .service-item:hover {
   transform: translateY(-10px); /* Efeito de elevação mais visível */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
@@ -54,7 +60,7 @@
   margin-bottom: 25px; /* Maior espaçamento abaixo do texto */
 }
 
-.contact-button {
+.view-photos-button {
   background-color: #007bff;
   color: white;
   padding: 12px 24px;
@@ -65,13 +71,18 @@
   transition: background-color 0.3s ease;
 }
 
-.contact-button:hover {
+.view-photos-button:hover {
   background-color: #0056b3;
 }
 
 @media (max-width: 768px) {
+  .services-list {
+    flex-direction: column; /* Em telas pequenas, empilha os cartões */
+    align-items: center;
+  }
+
   .service-item {
-    width: 100%; /* Faz os itens ocuparem 100% da largura em telas pequenas */
-    margin-bottom: 20px; /* Adiciona espaço entre os itens em telas pequenas */
+    flex: 1 1 100%; /* Ocupa 100% da largura */
+    max-width: 100%; /* Garante largura total em dispositivos menores */
   }
 }
