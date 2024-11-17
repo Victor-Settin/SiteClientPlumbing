@@ -22,12 +22,13 @@
 }
 
 .contact-text h2 {
-  font-size: 2.2rem;
+  font-size: 32px;
   margin-bottom: 10px;
+  color: #0056b3;
 }
 
 .contact-text p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   color: #555;
 }
 
@@ -66,7 +67,7 @@
 .terms-checkbox-container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .terms-checkbox-container input {

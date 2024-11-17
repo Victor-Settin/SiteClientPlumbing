@@ -8,16 +8,17 @@
 
 .services h1 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 32px;
   margin-bottom: 20px;
   color: #0056b3; /* Azul para o título */
 }
 
 .services p {
+  font-size: 18px;
+  color: #555;
+  font-weight: 300;
+  margin-bottom: 40px;
   text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 40px; /* Maior espaçamento abaixo do parágrafo */
-  color: #555; /* Cor de texto mais suave */
 }
 
 .services-list {
@@ -48,7 +49,7 @@
 }
 
 .service-item h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #007bff; /* Azul para os títulos das seções de serviço */
   margin-bottom: 15px;
   font-weight: 600; /* Peso mais forte para os subtítulos */
@@ -77,9 +78,10 @@
 
 @media (max-width: 768px) {
   .services-list {
-    flex-direction: column; /* Em telas pequenas, empilha os cartões */
+    flex-direction: column;
     align-items: center;
-  }
+    padding: 0px;
+}
 
   .service-item {
     flex: 1 1 100%; /* Ocupa 100% da largura */
