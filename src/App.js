@@ -8,11 +8,13 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';  
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Coming from './pages/Coming';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Coming>
         <Header />
         
         {/* Definindo as rotas principais */}
@@ -27,6 +29,7 @@ function App() {
         
         {/* Adicione o Analytics aqui */}
         <Analytics />
+        </Coming>
       </div>
     </Router>
   );
